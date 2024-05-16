@@ -13,16 +13,27 @@
 <body>
   <div class="Main">
     <header>
-      <a href="#">Главная</a>
-      <a href="#">Фото</a>
-      <a href="#">Посты</a>
-      <a href="#">Личный</a>
+      <a href="#" class="WindowNav">Главная</a>
+      <a href="#" class="WindowNav">Фото</a>
+      <a href="#" class="WindowNav">Посты</a>
+      <a href="#" class="WindowNav">Личный</a>
       <div class="mobileIcons">
-        <img src="./Icons/bars-solid.svg" alt="" id="menuBtn">
+        <button id="menuBtn" onclick="showPopUp()">
+          <img src="./Icons/bars-solid.svg" alt="">
+        </button>
       </div>
     </header>
+    <div class="PopUp">
+      <button class="ClosePopUp" onclick="closePopUp()">
+        <img src="./Icons/xmark-solid (1).svg" alt="">
+      </button>
+      <a href="#" class="mobile">Главная</a>
+      <a href="#" class="mobile">Фото</a>
+      <a href="#" class="mobile">Посты</a>
+      <a href="#" class="mobile">Личный</a>
+    </div>
     <h1 class="gallerey"></h1>
-    <div class="grid">
+    <div class="grid" onclick="Photo">
       <div class="photo">
         <img src="https://cdn.pixabay.com/photo/2017/03/04/22/33/oranges-half-2117123_1280.jpg" alt="">
         <p>Photo 1</p>
