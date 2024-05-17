@@ -1,4 +1,3 @@
-
 let currentString = '';
 
 function appendNumber(number) {
@@ -17,9 +16,17 @@ function updateResult() {
 
 function calculateResult() {
   try {
-    currentString = eval(currentString).toString();
+    if (currentString.includes('/ 0')) {
+      throw new Error('Ошибка при делении на 0');
+    }
+
+    currentString = safeEval(currentString).toString();
   } catch (e) {
-    currentString = 'Error';
+    currentString = 'Error: ' + e.message;
   }
   updateResult();
+}
+
+function safeEval(expression) {
+  return new Function('return ' + expression)();
 }
