@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+
+.resultDiv{
+    width: 400px;
+    height: 90px;
+    border: 1px solid;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .result{
+      border: 1px solid;
+      width: 99%;
+      height: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+.Container{
+  border: 1px solid black;
+  min-width: 500px;
+  min-height: 600px;
+  max-width: 500px;
+  width: auto;
+  margin: auto;
+  margin-top: 70px;
+  padding: 40px 0px 40px 60px;
+  display: grid; 
+  grid-auto-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 20px 20px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
+  }
+  
+.Accept{
+  width: 120px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: box-shadow 0.3s ease-in-out;
+  font-size: 20px;
+
+  &:hover{
+    box-shadow: 0 0 5px green;
+  }
+}
+
+#numbtn{
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px black;
+  font-size: 40px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  &:hover{
+    width: 72px;
+    height: 72px;
+    box-shadow: 0 0 5px green;
+
+  }
+}
+
