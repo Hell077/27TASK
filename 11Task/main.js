@@ -33,5 +33,9 @@ function AddPhoto() {
     Parent.appendChild(newPhoto);
     newPhoto.appendChild(image);
     newPhoto.appendChild(title);
+    alert(
+        "Успех"
+    )
+    ClosePhoto();
 }
 
