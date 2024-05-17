@@ -14,9 +14,9 @@
   <div class="Main">
     <header>
       <a href="#" class="WindowNav">Главная</a>
-      <a id="show_add_photo" href="#"  >Фото</a>
+      <a href="#" class="WindowNav" onclick="OpenPhoto()">Фото</a>
       <a href="#" class="WindowNav">Посты</a>
-      <a href="#" class="WindowNav">Личный</a>
+      <a href="#" class="WindowNav">Личный кабинет</a>
       <div class="mobileIcons">
         <button id="menuBtn" onclick="showPopUp()">
           <img src="./Icons/bars-solid.svg" alt="">
@@ -32,18 +32,21 @@
       <a href="#" class="mobile">Посты</a>
       <a href="#" class="mobile">Личный</a>
     </div>
-    <!-- <div id="add_new_photo">
-      <div>
-        <input id="new_photo_src" type="text" placeholder="Картинка">
-        <input id="new_photo_text" type="text" placeholder="Подпись">
-        <button id="add_photo">Добавить</button>
-        <button id="cancel">Отмена</button>
+
+
+
+    <div id="add_new_photo">
+      <div class="block">
+        <input id="NewPhotoSrc" type="text" placeholder="Картинка url">
+        <input id="NewPhotoName" type="text" placeholder="Название">
+        <button id="add_photo" onclick="AddPhoto()">Добавить</button>
+        <button id="cancel" onclick="ClosePhoto()">Отмена</button>
       </div>
-    </div> -->
+    </div>
 
 
     <h1 class="gallerey"></h1>
-    <div class="grid" onclick="Photo">
+    <div class="grid">
       <div class="photo">
         <img src="https://cdn.pixabay.com/photo/2017/03/04/22/33/oranges-half-2117123_1280.jpg" alt="">
         <p>Photo 1</p>
@@ -62,6 +65,7 @@
       </div>
 
       <script src="./main.js"></script>
+      <script src="./media.js"></script>
 </body>
 
 </html>

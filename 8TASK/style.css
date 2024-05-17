@@ -12,7 +12,9 @@
   width: 900px;
   align-items: center;
   border: 1px solid;
+  transition: transform 0.3s ease-in-out;
 }
+
 
 p {
   display: flex;
@@ -20,17 +22,31 @@ p {
   font-size: 40px;
   gap: 30px;
   border-top: 1px solid;
-  border-bottom: 1px;
+  border-bottom: 1px solid;
 }
 
 img {
-
   width: 400px;
   height: 300px;
-  transition: 0.3s ease-in-out;
+  /* animation: show 1s forwards; */
+  transition: transform 0.3s ease-in-out;
+  
+  transform-origin: top left;
+  
+  &:hover{
+    transform: scale(1.5);
+    
+  }
+}
 
-  &:hover {
-   width: 500px;
-   height: 500px;
+
+@keyframes show {
+  0%{
+    opacity: 0;
+    transform: rotateX(-45deg) translateY(-150px);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0px);
   }
 }

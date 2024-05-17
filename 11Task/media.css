@@ -16,6 +16,7 @@
     }
     .grid{
         grid-template-columns: 1fr;
+        width: 400px;
     }
 
     .menu{
