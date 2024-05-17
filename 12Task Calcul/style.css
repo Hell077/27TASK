@@ -5,12 +5,23 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-
+  background-color: whitesmoke;
 }
 
+#app{
+  border: 1px solid black;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+  margin-top: 5px;
+  background-color: #8a8a8a;
+}
 
 .resultDiv{
-    width: 400px;
+    min-width: 400px;
+    width: fit-content;
     height: 90px;
     border: 1px solid;
     margin: 0 auto;
@@ -19,15 +30,18 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    padding: 3px;
+    background-color: white;
     .result{
       border: 1px solid;
-      width: 99%;
+      width: auto;
+      min-width: 560px;
       height: 95%;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 10px;
-
+      font-size: 40px;
     }
 }
 
@@ -51,7 +65,7 @@
     border-radius: 30px;
   }
   
-.Accept{
+.Accept, .Clear{
   width: 120px;
   height: 70px;
   border-radius: 10px;
