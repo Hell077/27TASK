@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div id="app">
-      <div class="resultDiv">
-        <label for="" class="result" id="result">0</label>
-      </div>
-      <div class="Container">
-        <button class="Number1" onclick="appendNumber('1')" id="numbtn" >1</button>
-        <button class="Number2" onclick="appendNumber('2')" id="numbtn" >2</button>
-        <button class="Number3" onclick="appendNumber('3')" id="numbtn" >3</button>
-        <button class="Number4" onclick="appendNumber('4')" id="numbtn" >4</button>
-        <button class="Number5" onclick="appendNumber('5')" id="numbtn" >5</button>
-        <button class="Number6" onclick="appendNumber('6')" id="numbtn" >6</button>
-        <button class="Number7" onclick="appendNumber('7')" id="numbtn" >7</button>
-        <button class="Number8" onclick="appendNumber('8')" id="numbtn" >8</button>
-        <button class="Number9" onclick="appendNumber('9')" id="numbtn" >9</button>
-        <button class="Number0" onclick="appendNumber('0')" id="numbtn" >0</button>
-        <button class="Plus" onclick="appendOperator('+')" id="numbtn" >+</button>
-        <button class="Minus" onclick="appendOperator('-')" id="numbtn" >-</button>
-        <button class="Divide" onclick="appendOperator('/')" id="numbtn" >/</button>
-        <button class="Multiply" onclick="appendOperator('*')" id="numbtn" >*</button>
-        <button class="root" onclick="appendOperator('√')" id="numbtn">√</button>
-        <button class="Accept" onclick="calculateResult()">Решение</button>
-         <button class="Clear" onclick="Clear()">Отчистить поля</button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="resultDiv">
+      <label for="" class="result" id="result">0</label>
     </div>
-    <script src="./main.js"></script>
-  </body>
+    <div class="Container">
+      <button class="Number1" onclick="appendNumber('1')" id="numbtn">1</button>
+      <button class="Number2" onclick="appendNumber('2')" id="numbtn">2</button>
+      <button class="Number3" onclick="appendNumber('3')" id="numbtn">3</button>
+      <button class="Number4" onclick="appendNumber('4')" id="numbtn">4</button>
+      <button class="Number5" onclick="appendNumber('5')" id="numbtn">5</button>
+      <button class="Number6" onclick="appendNumber('6')" id="numbtn">6</button>
+      <button class="Number7" onclick="appendNumber('7')" id="numbtn">7</button>
+      <button class="Number8" onclick="appendNumber('8')" id="numbtn">8</button>
+      <button class="Number9" onclick="appendNumber('9')" id="numbtn">9</button>
+      <button class="Number0" onclick="appendNumber('0')" id="numbtn">0</button>
+      <button class="Plus" onclick="appendOperator('+')" id="numbtn">+</button>
+      <button class="Minus" onclick="appendOperator('-')" id="numbtn">-</button>
+      <button class="Divide" onclick="appendOperator('/')" id="numbtn">/</button>
+      <button class="Multiply" onclick="appendOperator('*')" id="numbtn">*</button>
+      <button class="Root" onclick="appendOperator('√')" id="numbtn">√</button>
+      <button class="Power" onclick="appendOperator('^')" id="numbtn">^</button>
+      <button class="Accept" onclick="calculateResult()">Решение</button>
+      <button class="Clear" onclick="Clear()">Отчистить поля</button>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
 </html>

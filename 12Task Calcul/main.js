@@ -15,16 +15,25 @@ function updateResult() {
 }
 
 function calculateResult() {
+  if (currentString == null || currentString.trim() === '') {
+    throw new Error('Поля не должны быть пустыми');
+  }
   try {
-    if (currentString.includes('/ 0')) {
+    if (/\/ 0/.test(currentString)) {
       throw new Error('Ошибка при делении на 0');
     }
 
     // Обработка оператора квадратного корня перед другими операциями
-    currentString = currentString.replace(/√ (\d+(\.\d+)?)/g, (match, p1) => {
+    currentString = currentString.replace(/√\s*(\d+(\.\d+)?)/g, (match, p1) => {
       return Math.sqrt(parseFloat(p1));
     });
 
+    // Обработка оператора возведения в степень
+    currentString = currentString.replace(/(\d+(\.\d+)?)\s*\^\s*(\d+(\.\d+)?)/g, (match, p1, p2, p3) => {
+      return Math.pow(parseFloat(p1), parseFloat(p3));
+    });
+
+    // Вычисление выражения
     currentString = safeEval(currentString).toString();
   } catch (e) {
     currentString = 'Error: ' + e.message;
@@ -36,11 +45,10 @@ function safeEval(expression) {
   return new Function('return ' + expression)();
 }
 
-function Clear(){
+function Clear() {
   currentString = "";
   updateResult();
 }
-
 
 document.addEventListener('keydown', function(event) {
   const key = event.key;
@@ -53,10 +61,11 @@ document.addEventListener('keydown', function(event) {
   } else if (key === 'Backspace') { 
     currentString = currentString.slice(0, -1);
     updateResult();
-  } else if (key === 'Escape') { 
-    clearString();
+  } else if (key === 'Home') { 
+    Clear();
   } else if (key === 'r' || key === 'R') { 
     appendOperator('√');
+  } else if (key === '^') { 
+    appendOperator('^');
   }
 });
-
