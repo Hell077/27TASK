@@ -29,41 +29,41 @@ $(document).ready(function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   const imageUrls1 = [
-    "https://source.unsplash.com/random/200x200?sig=1",
-    "https://source.unsplash.com/random/200x200?sig=2",
-    "https://source.unsplash.com/random/200x200?sig=3",
-    "https://source.unsplash.com/random/200x200?sig=4",
-    "https://source.unsplash.com/random/200x200?sig=5",
-    "https://source.unsplash.com/random/200x200?sig=6",
-    "https://source.unsplash.com/random/200x200?sig=7",
-    "https://source.unsplash.com/random/200x200?sig=8",
-    "https://source.unsplash.com/random/200x200?sig=9",
-    "https://source.unsplash.com/random/200x200?sig=10"
+    "https://source.unsplash.com/random/500x500?sig=1",
+    "https://source.unsplash.com/random/500x500?sig=2",
+    "https://source.unsplash.com/random/500x500?sig=3",
+    "https://source.unsplash.com/random/500x500?sig=4",
+    "https://source.unsplash.com/random/500x500?sig=5",
+    "https://source.unsplash.com/random/500x500?sig=6",
+    "https://source.unsplash.com/random/500x500?sig=7",
+    "https://source.unsplash.com/random/500x500?sig=8",
+    "https://source.unsplash.com/random/500x500?sig=9",
+    "https://source.unsplash.com/random/500x500?sig=10"
   ];
 
   const imageUrls2 = [
-    "https://source.unsplash.com/random/200x200?sig=11",
-    "https://source.unsplash.com/random/200x200?sig=12",
-    "https://source.unsplash.com/random/200x200?sig=13",
-    "https://source.unsplash.com/random/200x200?sig=14",
-    "https://source.unsplash.com/random/200x200?sig=15",
-    "https://source.unsplash.com/random/200x200?sig=16",
-    "https://source.unsplash.com/random/200x200?sig=17",
-    "https://source.unsplash.com/random/200x200?sig=18",
-    "https://source.unsplash.com/random/200x200?sig=19",
-    "https://source.unsplash.com/random/200x200?sig=20"
+    "https://source.unsplash.com/random/500x500?sig=11",
+    "https://source.unsplash.com/random/500x500?sig=12",
+    "https://source.unsplash.com/random/500x500?sig=13",
+    "https://source.unsplash.com/random/500x500?sig=14",
+    "https://source.unsplash.com/random/500x500?sig=15",
+    "https://source.unsplash.com/random/500x500?sig=16",
+    "https://source.unsplash.com/random/500x500?sig=17",
+    "https://source.unsplash.com/random/500x500?sig=18",
+    "https://source.unsplash.com/random/500x500?sig=19",
+    "https://source.unsplash.com/random/500x500?sig=20"
   ];
   const imageUrls3 = [
-    "https://source.unsplash.com/random/200x200?sig=21",
-    "https://source.unsplash.com/random/200x200?sig=22",
-    "https://source.unsplash.com/random/200x200?sig=23",
-    "https://source.unsplash.com/random/200x200?sig=24",
-    "https://source.unsplash.com/random/200x200?sig=25",
-    "https://source.unsplash.com/random/200x200?sig=26",
-    "https://source.unsplash.com/random/200x200?sig=27",
-    "https://source.unsplash.com/random/200x200?sig=28",
-    "https://source.unsplash.com/random/200x200?sig=29",
-    "https://source.unsplash.com/random/200x200?sig=30"
+    "https://source.unsplash.com/random/500x500?sig=21",
+    "https://source.unsplash.com/random/500x500?sig=22",
+    "https://source.unsplash.com/random/500x500?sig=23",
+    "https://source.unsplash.com/random/500x500?sig=24",
+    "https://source.unsplash.com/random/500x500?sig=25",
+    "https://source.unsplash.com/random/500x500?sig=26",
+    "https://source.unsplash.com/random/500x500?sig=27",
+    "https://source.unsplash.com/random/500x500?sig=28",
+    "https://source.unsplash.com/random/500x500?sig=29",
+    "https://source.unsplash.com/random/500x500?sig=30"
   ];
 
 
