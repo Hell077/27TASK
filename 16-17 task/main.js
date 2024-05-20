@@ -19,7 +19,7 @@ async function start() {
       hash = hash.substring(1);
     }
     let response = await fetch(`${hash}.html`);
-    if (!response.ok) throw new Error('Network response was not ok');
+    if (!response.ok) throw new Error('Ошибка сети');
     let data = await response.text();
     document.querySelector(".content").innerHTML = data;
   } catch (error) {
