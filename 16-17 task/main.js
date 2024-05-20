@@ -11,10 +11,20 @@ links.forEach(link => {
 });
 
 async function start() {
-  let hash = window.location.hash;
-  hash = hash.substring(1);
-  let data = await fetch(`${hash}.html`);
-  document.querySelector(".content").innerHTML = await data.text();
+  try {
+    let hash = window.location.hash;
+    if (hash === "") {
+      hash = "main";
+    } else {
+      hash = hash.substring(1);
+    }
+    let response = await fetch(`${hash}.html`);
+    if (!response.ok) throw new Error('Network response was not ok');
+    let data = await response.text();
+    document.querySelector(".content").innerHTML = data;
+  } catch (error) {
+    console.error('Fetch error: ', error);
+  }
 }
 
 start();
