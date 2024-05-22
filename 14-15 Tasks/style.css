@@ -1,5 +1,5 @@
 body {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(45deg, #30cfd0, #330867);
@@ -28,6 +28,8 @@ header{
 }
 
 menu{
+  z-index: 100;
+  gap: 20px;
   display: none;
   left: 50%;
   border: 1px solid black;
@@ -36,7 +38,8 @@ menu{
   transform: translateX(-50%);
   top: 60px;
   min-width: 700px;
-  height: 150px;
+  height: auto;
+  min-height: 300px;
   background-color: #fff;
   position: absolute;
   justify-content: center;
@@ -47,6 +50,53 @@ menu{
     border: 2px solid black;
     border-radius: 5px;
   }
+  button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    
+  
+  }
+  #AddPhoto{
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background-color: #348f00;
+      filter: drop-shadow(0 0 0.75rem rgb(125, 223, 133));
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  #CloseMenu{
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background-color: crimson;
+      filter: drop-shadow(0 0 0.75rem crimson);
+      color: white;
+    }
+  }
+}
+
+.header-hidden {
+  transform: translateY(-500px); /* Скрытие заголовка вверх на 500px */
+}
+
+.menuFilter{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 80;
+  background-color: #0f0f0f62;
+  display: none;
+}
+
+.buttonContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 
@@ -89,7 +139,7 @@ menu{
 .slick-next {
   width: 200px;
   height: 70px;
-  z-index: 1000;
+  z-index: 60;
   background: linear-gradient(45deg, #ffffff, #6dfaff);
   border-radius: 10px;
   display: flex;
