@@ -7,6 +7,26 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
+header{
+  border: 1px solid;
+  border-color: black;
+  background-color: #222;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px 30px 0px;
+  
+  a{
+    transition: filter 0.3s ease-in-out, color  0.3s ease-in-out;
+    &:hover{
+      color: crimson;
+      filter: drop-shadow(0 0 0.75rem crimson);
+    }
+  }
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;

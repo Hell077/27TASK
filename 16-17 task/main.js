@@ -15,7 +15,11 @@ async function start() {
     let hash = window.location.hash;
     if (hash === "") {
       hash = "main";
-    } else {
+    } 
+    else if (hash != "main"|| hash != "image" || hash != "profile" || hash != "posts"){
+      hash = "main";
+    }
+    else {
       hash = hash.substring(1);
     }
     let response = await fetch(`${hash}.html`);
