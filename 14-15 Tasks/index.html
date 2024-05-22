@@ -12,10 +12,23 @@
 
 <body>
   <header>
-    <a class="navbtn1">Добавить картинку в слайдер</a>
+    <a class="navbtn1" onclick="ShowMenu()">Добавить картинку в слайдер</a>
   </header>
-  <menu>
-    
+  <menu id="menu">
+    <p>Url \/</p>
+    <input type="text" id="link">
+    <div class="buttonContainer">
+      <button onclick="add()"> Add new photo</button>
+      <button onclick="closeMenu()">Close Menu</button>
+      <label for="slider">Выберите слайдер:</label>
+      <input list="sliderList" id="slider" name="slider">
+      <datalist id="sliderList">
+        <option value="Слайдер_1">
+        <option value="Слайдер_2">
+        <option value="Слайдер_3">
+      </datalist>
+    </div>
+
   </menu>
   <div class="wrapper">
     <div id="slider1" class="slider"></div>

@@ -27,6 +27,29 @@ header{
   }
 }
 
+menu{
+  display: none;
+  left: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0, 0 ,5px , 5px #333;
+  transform: translateX(-50%);
+  top: 60px;
+  min-width: 700px;
+  height: 150px;
+  background-color: #fff;
+  position: absolute;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  input{
+    min-width: 85%;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+}
+
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;

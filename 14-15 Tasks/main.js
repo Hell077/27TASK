@@ -29,6 +29,22 @@ $(document).ready(function () {
 });
 
 
+function ShowMenu() {
+  document.getElementById("menu").style.display = "flex"
+}
+
+function closeMenu(){
+  document.getElementById("menu").style.display = "none"
+}
+
+
+function add(){
+  let link = document.getElementById("link").value
+  console.log(link)
+}
+
+
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
